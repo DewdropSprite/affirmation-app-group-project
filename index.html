@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>JavaScript Affirmation App</title>
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Affirmation App</h1>
+  </header>
+
+  <main>
+    <section>
+      <h3>Fire and Ice:</h3>
+      <button id="fire" onclick="makeFire()">🔥</button>
+      <button id="ice" onclick="makeIce()">❄️</button>
+      <div id="emoji">
+        <!-- fire and ice emojis go here -->
+      </div>
+    </section>
+
+    <section>
+      <h3>Create an Affirmation:</h3>
+      <form>
+        <input placeholder="Affirmation" type="text" id="affirmationInput">
+        <input placeholder="Author" type="text" id="authorInput">
+        <button id="submitButton" onclick="dominate(event)">Submit</button>
+
+      </form>
+
+    </section>
+
+    <section>
+      <h3>Your Affirmations:</h3>
+      <table id="tableData">
+        <thead>
+          <td>Affirmation Text</td>
+          <!--<td id = "delete"></td>-->
+          <td>Affirmation Author</td>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <td id="affirmations"></td>
+            <td id="author"></td> -->
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <h5>Thanks for being here. Sincerely. 🙂</h5>
+  </footer>
+</body>
+
+</html>
